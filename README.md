@@ -23,11 +23,36 @@ A reference guide from the [Linux Journey](https://linuxjourney.com/).
 19. [Troubleshooting](#)
 20. [DNS](#)
 
+## Command Line Fundamentals
+
+### The Shell
+The shell is a program that takes your commands from the keyboard and sends them to the operating system to perform.
+
+The shell prompt format looks like this:
+```shell
+username@hostname:current_directory
+```
+Shell commands are entered after the `$` shown at the end of the shell prompt.
+```shell
+pete@icebox:/home/pete $ _command_goes_here_
+```
+
+Print text arguments to the display with `echo`:
+```shell
+echo Hello World
+```
+
+|Command|Description|
+|:------|:----------|
+|**echo**|Print text arguments to the display.|
+|**date**|Prints the date in UTC format (Wed Sep 26 15:55:37 UTC 2018)|
+|**whoami**|Prints the username of the current user signed in.|
+|**pwd**|Shows you which directory you are in. `pwd` stands for Print Working Directory.|
+|**cd**|Change directory.|
+
 ## Basic Commands
 |Command|Description|
 |:--|:--|
-|**cd**|Change directory.|
-|**pwd**|View where you are.|
 |**adduser**|Adds a user to the system.|
 |**cat**|Displays the contents of a file.|
 |**cp**|Copies.|
