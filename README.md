@@ -37,6 +37,7 @@ Shell commands are entered after the `$` shown at the end of the shell prompt.
 pete@icebox:/home/pete $ _command_goes_here_
 ```
 
+### Echo
 Print text arguments to the display with `echo`:
 ```shell
 echo Hello World
@@ -47,8 +48,42 @@ echo Hello World
 |**echo**|Print text arguments to the display.|
 |**date**|Prints the date in UTC format (Wed Sep 26 15:55:37 UTC 2018)|
 |**whoami**|Prints the username of the current user signed in.|
-|**pwd**|Shows you which directory you are in. `pwd` stands for Print Working Directory.|
-|**cd**|Change directory.|
+
+### Print Working Directory
+|Command|Description|
+|:------|:----------|
+|**pwd**|Shows you which directory you are in.|
+
+### Change Directory
+|Command|Description|
+|:------|:----------|
+|**cd .**|This is the directory you are currently in.|
+|**cd ..**|Takes you to the directory above your current.|
+|**cd \~**|This directory defaults to your “home directory”.|
+|**cd -**|This will take you to the previous directory you were just at.|
+
+### List Directories and Files
+|Command|Description|
+|:------|:----------|
+|**ls**|Show directory contents.|
+|**ls -a**|Show all directory contents. (even hidden files).|
+|**ls -l**|Show a detailed list of directory contents in a long format.|
+|**ls -la**|Show a detailed list of all directory contents (even hiden files).|
+|**ls -R**|Recursively list directory contents.|
+|**ls -r**|Show directory contents in reverse order while sorting.|
+|**ls -t**|Show directory contents sorted by modification time (newest first).|
+
+### Touch
+Touch allows you to create new, empty files. Touch can also be used to change timestamps on existing files and directories.
+```shell
+touch filename.txt
+```
+
+### Cat
+THe `cat` command, short for concatenate, displays the contents of a file(s).
+```shell
+cat filename 
+````
 
 ## Basic Commands
 |Command|Description|
@@ -58,7 +93,6 @@ echo Hello World
 |**cp**|Copies.|
 |**ifconfig**|Much like ipconfig in Windows, displays network configuration information about your NIC (Network Interface Card).|
 |**kill**|Kills a running process. (You must specify the process ID number.)|
-|**ls**|Displays the contents of a folder. The -l option provides the most information about the folder contents.|
 |**man**|Displays the "manual" page for a comman (much like a help file).|
 |**passwd**|Used to change your password.|
 |**ps**|Process status command. Using the -ef option will show all processes running on the system.|
