@@ -63,6 +63,8 @@ echo Hello World
 |**cd -**|This will take you to the previous directory you were just at.|
 
 ### List Directories and Files
+Lists the files and directory in the current or specified folder.
+
 |Command|Description|
 |:------|:----------|
 |**ls**|Show directory contents.|
@@ -89,15 +91,26 @@ cat filename
 |Command|Description|
 |:--|:--|
 |**adduser**|Adds a user to the system.|
-|**cat**|Displays the contents of a file.|
-|**cp**|Copies.|
 |**ifconfig**|Much like ipconfig in Windows, displays network configuration information about your NIC (Network Interface Card).|
 |**kill**|Kills a running process. (You must specify the process ID number.)|
-|**man**|Displays the "manual" page for a comman (much like a help file).|
 |**passwd**|Used to change your password.|
 |**ps**|Process status command. Using the -ef option will show all processes running on the system.|
-|**rm**|Removes files. The command rm -r also recursively removes all directories and subdirectories on the path and provides no warning when deleting a write-protected file.|
 |**su**|Allows you to perform functionas as another user. The sudo command version allows you to run programs with "super user" (root) privileges.|
+|**mkdir `<folder>`**|Creates a new subfolder in the current or specified folder.|
+|**cp `<file>` `<destination>`**|Copies a file or a directory to another location (to copy a complete directory you need to add the -r parameter for “recursive”).|
+|**mv `<source>` `<destination>`**|Moves a file or a directory to another location.|
+|**cat \<file\>**|Displays all the content of the specified file.|
+|**more \<file\>**|Displays the content of the specified file, page per page (enter or spec to continue, q to quit).|
+|**tail \<file\>**|Tail allows you to display the end of a file, it’s useful to check new entries in a log file.|
+|**tail \<file\>**|Tail allows you to display the end of a file, it’s useful to check new entries in a log file.|
+|**tail -n20 \<file\>**|Specify the number of lines to display with `-n`.|
+|**tail -f \<file\>**|Displays new lines in real-time.|
+|**head \<file\>**|Display the beginning of a file.|
+|**grep \<file\>**||
+|**man**|Displays the "manual" page for a comman (much like a help file).|
+|**rm**|Removes files. The command rm -r also recursively removes all directories and subdirectories on the path and provides no warning when deleting a write-protected file.|
+|**tar -c**|Store files into an archive. It’s often used with gzip to compress files.|
+|**tar -x**|Same command but to extract files.|
 
 ## The Filesystem
 Linux File Structure
