@@ -92,10 +92,13 @@ cat filename
 |:--|:--|
 |**adduser**|Adds a user to the system.|
 |**ifconfig**|Much like ipconfig in Windows, displays network configuration information about your NIC (Network Interface Card).|
-|**kill**|Kills a running process. (You must specify the process ID number.)|
 |**passwd**|Used to change your password.|
 |**ps**|Process status command. Using the -ef option will show all processes running on the system.|
 |**su**|Allows you to perform functionas as another user. The sudo command version allows you to run programs with "super user" (root) privileges.|
+
+## File Management
+|Command|Description|
+|:--|:--|
 |**mkdir `<folder>`**|Creates a new subfolder in the current or specified folder.|
 |**cp `<file>` `<destination>`**|Copies a file or a directory to another location (to copy a complete directory you need to add the -r parameter for “recursive”).|
 |**mv `<source>` `<destination>`**|Moves a file or a directory to another location.|
@@ -111,6 +114,45 @@ cat filename
 |**rm**|Removes files. The command rm -r also recursively removes all directories and subdirectories on the path and provides no warning when deleting a write-protected file.|
 |**tar -c**|Store files into an archive. It’s often used with gzip to compress files.|
 |**tar -x**|Same command but to extract files.|
+
+## Network Commands
+|Command|Description|
+|:--|:--|
+|**ifconfig**|Displays your current network configuration, mainly your IP address if connected.|
+|**ping \<ip\>**|Sends a ping packet to another IP on the network to check if the host is alive.|
+|**ifup \<interface\>**|Enables the specified interface.|
+|**ifdown \<interface\>**|Disables the specified interface. Could be useful to disable WiFi if you are already connected by cable for example.|
+
+## File Transfer and Remote Connection
+|Command|Description|
+|:--|:--|
+|**wget \<url\>**|This command allows you to download a file from the Internet.|
+|**ssh \<user\>@\<ip\>**|SSH is a network protocol that provides you a way to connect securely to a remote computer.|
+|**scp \<file\> \<user\>@\<ip\>:\<path\>**|scp can transfer a file to a remote computer over SSH.|
+|**rsync \<file\> \<user\>@\<ip\>:\<path\>**|rsync does almost the same thing but with a delta comparison algorithm and some optimizations to transfer files faster.|
+
+## System Updates
+|Command|Description|
+|:--|:--|
+|**apt-get update**|Downloads the last repository version for each one you have in your configuration (/etc/apt/sources.list).|
+|**apt-get upgrade**|Updates all installed packages if needed.|
+
+## Packages Management
+|Command|Description|
+|:--|:--|
+|**apt-get install \<package\>**|Installs the specified package(s).|
+|**apt-get remove \<package\>**|Removes a previously selected package.|
+|**apt-cache search \<search\>**|Searches for a package name in the packages list (repository).|
+|**dpkg -l**|Lists all installed packages on your system. You can use grep to find a specific package.|
+
+## System Management
+|Command|Description|
+|:--|:--|
+|**reboot**|This command will restart the machine immediately.|
+|**shutdown -h now**|This is to stop the machine immediately.|
+|**service \<servicename\> \<action\>**|This command allows you to start or stop services.|
+|**ps**|This command displays all running process on your machine.|
+|**kill \<pid\>**|Kills a running process. (You must specify the process ID number.)|
 
 ## The Filesystem
 Linux File Structure
