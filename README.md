@@ -65,15 +65,15 @@ echo Hello World
 ### List Directories and Files
 Lists the files and directory in the current or specified folder.
 
-|Command|Description|
-|:------|:----------|
-|**ls**|Show directory contents.|
-|**ls -a**|Show all directory contents. (even hidden files).|
-|**ls -l**|Show a detailed list of directory contents in a long format.|
-|**ls -la**|Show a detailed list of all directory contents (even hiden files).|
-|**ls -R**|Recursively list directory contents.|
-|**ls -r**|Show directory contents in reverse order while sorting.|
-|**ls -t**|Show directory contents sorted by modification time (newest first).|
+| Command |Description |
+|:--------|:-----------|
+| **ls**     | Show directory contents.|
+| **ls -a**  | Show all directory contents. (even hidden files).|
+| **ls -l**  | Show a detailed list of directory contents in a long format.|
+| **ls -la** | Show a detailed list of all directory contents (even hiden files).|
+| **ls -R**  | Recursively list directory contents.|
+| **ls -r**  | Show directory contents in reverse order while sorting.|
+| **ls -t**  | Show directory contents sorted by modification time (newest first).|
 
 ### Touch
 Touch allows you to create new, empty files. Touch can also be used to change timestamps on existing files and directories.
@@ -82,10 +82,45 @@ touch filename.txt
 ```
 
 ### Cat
-THe `cat` command, short for concatenate, displays the contents of a file(s).
+The `cat` command, short for concatenate, displays the contents of a file(s).
 ```shell
 cat filename 
 ````
+
+### Less
+The `less` command displays text in a paged manner, so you can navigate through a text file page by page.
+
+```shell
+less /path/file
+```
+
+Once you are in the `less` command you can use other commands to navigate in the file.
+
+| Command                                                    | Description                                         |
+|:-----------------------------------------------------------|:----------------------------------------------------|
+| **q**                                                      | Quit out of less.                                   |
+| **up**, **down**, <kbd>Page Up</kbd>, <kbd>Page Down</kbd> | Navigate using arrow keys or page keys.             |
+| **g**                                                      | Move to the beginning of the text file.             |
+| **G**                                                      | Move to the end of the text file.                   |
+| **/\<search term\>**                                       | Search for specific words within the text document. |
+| **h**                                                      | Help menu for `less`.                               |
+
+### History
+View a history of commands that you previously entered.
+
+```shell
+history
+```
+
+Instead of typing a command again you can use the up arrow to find a previously entered command and press <kbd>Enter</kbd>. Use `!!` if you want to use the previous command without typing it in again.
+
+Another history shortcut is <kbd>CTRL</kbd> + <kbd>R</kbd>, the reverse search command. Hit the <kbd>CTRL</kbd> + <kbd>R</kbd> keys and start typing parts of the command you want and it will show you matches. You can navigate through them by hitting the <kbd>CTRL</kbd> + <kbd>R</kbd> keys again. Once you find the command you want to use again hit the <kbd>Enter</kbd>.
+
+To clean up the terminal window use the `clear` command to remove the clutter in the display.
+
+If you start typing the beginning of a command, directory, file, etc you can hit the <kbd>Tab</kbd> key to autocomplete based on what is found in the directory you are searching.
+
+---
 
 ## Basic Commands
 |Command|Description|
