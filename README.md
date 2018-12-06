@@ -120,6 +120,8 @@ To clean up the terminal window use the `clear` command to remove the clutter in
 
 If you start typing the beginning of a command, directory, file, etc you can hit the <kbd>Tab</kbd> key to autocomplete based on what is found in the directory you are searching.
 
+### Copy
+
 ---
 
 ## Basic Commands
